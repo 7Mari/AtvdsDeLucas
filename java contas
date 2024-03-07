@@ -1,0 +1,15 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    int x = -2;
+	    float contaA = (2 * x) + (3 * x) - (4 * x);
+	    double contaB = (3f * x) / (4f * x) + (5f * x) - (7f * x);
+	    float contaC = (5 * x) + (6 * x) - x + (10 * x);
+      
+	    
+	    System.out.println("Letra A |2x + 3x - 4x| = " + contaA);
+	    System.out.println("Letra B |3x / 4x + 5x -7x| = " + contaB);
+        System.out.println("Letra C |5x + 6x - x + 10x| = " + contaC);
+
+	}
+}
