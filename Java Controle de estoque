@@ -1,0 +1,73 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+	    String[] Produto ={"|-Processador Cyrix-|" , "|-Processador Intel Core-|" , "|-Processador AMD-|"};
+	    
+	    float VMD, EMIN, EMAX, EA = 100, LR = 60, TR = 7;
+	    float mes1 = 500, mes2 = 600 ,mes3 = 1000;
+	    
+	    VMD = ((mes1 + mes2 + mes3)/3)/25;
+	    EMIN = VMD * TR;
+	    EMAX = EMIN + LR;
+	    
+	    System.out.println(Produto[0]); 
+	    System.out.println("VENDA MÉDIA DIÁRIA: " +VMD);     
+	    System.out.println("ESTOQUE MÍNIMO: " +EMIN);         
+	    System.out.println("ESTOQUE MÁXIMO: " +EMAX);        
+	    
+	    if (EA > EMIN)                                      
+	    System.out.println("--Não Comprar");                   
+	    else                                              
+	    System.out.println("--Comprar");   
+	    
+	    System.out.println();
+	    //2
+	    
+	    float VMD1, EMIN1, EMAX1, EA1 = 70, LR1 = 50, TR1 = 5;
+	    float mes11 = 100, mes21 = 100 ,mes31 = 100;
+	    
+	    VMD1 = ((mes11 + mes21 + mes31)/3)/25;
+	    EMIN1 = VMD1 * TR1;
+	    EMAX1 = EMIN1 + LR1;
+	    
+	    System.out.println(Produto[1]);
+	    System.out.println("VENDA MÉDIA DIÁRIA: " +VMD1);     
+	    System.out.println("ESTOQUE MÍNIMO: " +EMIN1);         
+	    System.out.println("ESTOQUE MÁXIMO: " +EMAX1);        
+	    
+	    if (EA1 > EMIN1)                                      
+	    System.out.println("--Não Comprar");                   
+	    else                                              
+	    System.out.println("--Comprar");
+	    
+	    System.out.println();
+	    //3
+	    
+	    float VMD2, EMIN2, EMAX2, EA2 = 80, LR2 = 100, TR2 = 9;
+	    float mes12 = 250, mes22 = 350 ,mes32 = 450;
+	    
+	    VMD2 = ((mes12 + mes22 + mes32)/3)/25;
+	    EMIN2 = VMD2 * TR2;
+	    EMAX2 = EMIN2 + LR2;
+	    
+	    System.out.println(Produto[2]);
+	    System.out.println("VENDA MÉDIA DIÁRIA: " +VMD2);     
+	    System.out.println("ESTOQUE MÍNIMO: " +EMIN2);         
+	    System.out.println("ESTOQUE MÁXIMO: " +EMAX2);        
+	    
+	    
+	    if (EA2 > EMIN2)                                      
+	    System.out.println("--Não Comprar");                   
+	    else                                              
+	    System.out.println("--Comprar");
+	     
+	}
+}
