@@ -1,0 +1,50 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+	Scanner leia = new Scanner(System.in);
+		
+	    int VMDa, EMINa, EMAXa;
+	    
+	    System.out.println("Digite o produto: ");
+		String Produto = leia.next();
+	    
+	    System.out.println("Digite o mês 1: ");
+		int mes1a = leia.nextInt();
+		
+		System.out.println("Digite o mês 2: ");
+		int mes2a = leia.nextInt();
+		
+		System.out.println("Digite o mês 3: ");
+		int mes3a = leia.nextInt();
+		
+		System.out.println("Digite o tempo de reposição: ");
+		int TRa = leia.nextInt();
+		
+		System.out.println("Digite o lote: ");
+		int LRa = leia.nextInt();
+		
+		System.out.println("Digite o estoque atual: ");
+		int EAa = leia.nextInt();
+		
+		System.out.println("\n\n\n\n ");
+		
+		VMDa = ((mes1a + mes2a + mes3a)/3)/25;
+	    EMINa = VMDa * TRa;
+	    EMAXa = EMINa + LRa;
+	    
+	    System.out.println("Produto " +Produto); 
+	    System.out.println("VENDA MÉDIA DIÁRIA: " +VMDa);     
+	    System.out.println("ESTOQUE MÍNIMO: " +EMINa);         
+	    System.out.println("ESTOQUE MÁXIMO: " +EMAXa);        
+	    
+	    if (EAa > EMINa)                                      
+	    System.out.println("--Não Comprar");                   
+	    else                                              
+	    System.out.println("--Comprar");   
+	    
+	    System.out.println();
+	    
+	    
+	}
+}
