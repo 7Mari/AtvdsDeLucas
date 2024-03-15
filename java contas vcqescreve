@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner numeros = new Scanner(System.in);
+		
+		    System.out.println("Digite o primeiro número: ");
+		    float n1 = numeros.nextFloat();
+		    
+		    System.out.println("Digite o segundo número: ");
+		    float n2 = numeros.nextFloat();
+		   System.out.println("\n\n\n\n\n");
+		    numeros.close();
+		    float soma= n1 + n2 , sub= n1 - n2 , multi= n1 * n2 , div= n1 / n2;
+		    
+		   
+		    System.out.println("Soma: " + soma);
+		    System.out.println("Subtração: " + sub);
+		    System.out.println("Multiplicação: " + multi);
+		    System.out.println("Divisão: " + div);
+		    
+	}
+}
