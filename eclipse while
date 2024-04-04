@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class repetiçãoFor {
+static Scanner leia = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		int n = 20;
+		
+		while(n != 10) {
+			System.out.println("Insira um número: ");
+			n = leia.nextInt();
+			
+			if(n == 10)
+				System.out.println("Você acertou! ");
+			else
+				System.out.println("Você errou! ");
+			
+		}
+		
+		
+		leia.close();
+	}
+
+}
