@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class main {
+static Scanner leia = new Scanner(System.in);
+
+	public static void main (String[] args) {
+		System.out.println("Informe seu nome: ");
+		String nome = leia.next();
+		
+		System.out.println("Nome: " +nome);
+		 
+
+	}
+
+}
