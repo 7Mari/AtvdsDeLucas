@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class repetiçãoFor {
+static Scanner leia = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		float soma = 0;
+		
+		for(int i = 1; i <=3; i++) {
+			System.out.println("Digite a " +i+ "º nota: ");
+			float nota = leia.nextFloat();
+			
+			soma += nota;
+		}
+		float media;
+		media = soma / 3;
+		System.out.println("Média: " +media);
+		
+		if(media >= 7)
+			System.out.println("Aprovado!");
+		else
+			System.out.println("Reprovado!");
+
+	}
+
+}
