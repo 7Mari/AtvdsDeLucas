@@ -1,0 +1,56 @@
+import java.util.Scanner;
+public class controleestoque {
+
+	private static final int VMD = 0;
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		
+	    int meses = 0;
+	    int numMeses = 7;
+	    int contador = 0;
+	    int totalMeses = 0;
+	    
+	    while(contador < numMeses) {
+		    contador++;
+		    System.out.println("Digite o" + contador +"º mês : ");
+			meses = leia.nextInt();
+			totalMeses += meses;
+			
+	    }
+	    
+	    System.out.println("Digite o tempo de reposição: ");
+		int TR = leia.nextInt();
+		
+		System.out.println("Digite o lote: ");
+		int LR = leia.nextInt();
+		
+		System.out.println("Digite o estoque atual: ");
+		int EA = leia.nextInt();
+		
+		System.out.println("\n\n\n\n ");
+		
+		int VMD = 0;
+	    int EMIN = 0;
+	    int EMAX = 0;
+		
+		VMD = ((totalMeses)/numMeses)/25;
+	    EMIN = VMD * TR;
+	    EMAX = EMIN + LR;
+	    
+	
+	    System.out.println("VENDA MÉDIA DIÁRIA: " +VMD);     
+	    System.out.println("ESTOQUE MÍNIMO: " +EMIN);         
+	    System.out.println("ESTOQUE MÁXIMO: " +EMAX);        
+	    
+	    if (EA > EMIN)                                      
+	    System.out.println("--Não Comprar");                   
+	    else                                              
+	    System.out.println("--Comprar");   
+	    
+	    System.out.println();
+
+	    leia.close();
+	}
+
+}
