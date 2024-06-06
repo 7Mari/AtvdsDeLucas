@@ -17,4 +17,7 @@ Produto produto = new Produto();
 int estoque = leia.nextInt();
 produto.addProduto(estoque);
 
+import javax.swing.JOptionPane;
+                JOptionPane.showMessageDialog(frame, "O sistema está em andamento");
+
 leia.close();
